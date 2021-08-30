@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="CSS/categorias.css" />
+    <title>Estadísticas - Daily Bits</title>
+  </head>
+  <body style="background-color: #16161a; color: #fffffe">
+    <h3 class="m-2">Estadísticas</h3>
+
+    <div class="container mb-3">
+      <p
+        style="color: #fffffe; cursor: pointer; font-size: x-large;"
+        data-toggle="collapse"
+        data-target="#demo"
+      >
+        Los últimos 7 días
+      </p>
+      <div id="demo" class="collapse mb-4" style="border: 1px solid #fffffe;">
+        <div class="d-flex justify-content-around align-items-center">
+          <img src="images/clock.png" alt="clock"  style="width: 10vw; height: 5vh">
+          <p>Tiempo de estudio (horas)</p>
+          <p>x</p>
+        </div>
+      </div>
+
+      <div id="demo" class="collapse mb-4" style="border: 1px solid #fffffe;">
+        <div class="d-flex justify-content-around align-items-center">
+          <img src="images/message.png" alt="message"  style="width: 10vw; height: 5vh">
+          <p>Respuestas contestadas</p>
+          <p id="total"></p>
+        </div>
+      </div>
+
+      <div id="demo" class="collapse mb-4" style="border: 1px solid #fffffe;">
+        <div class="d-flex justify-content-around align-items-center">
+          <img src="images/message.png" alt="message"  style="width: 10vw; height: 5vh">
+          <p>Respuestas correctas</p>
+          <p id="correctas"></p>
+        </div>
+      </div>
+
+      <div id="demo" class="collapse mb-4" style="border: 1px solid #fffffe;">
+        <div class="d-flex justify-content-around align-items-center"> 
+          <img src="images/message.png" alt="message"  style="width: 10vw; height: 5vh">
+          <p>Respuestas Incorrectas</p>
+          <p id="incorrectas"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer
+    style="
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #232e35;
+    "
+    class="fixed-bottom"
+  >
+    <div>
+      <a href="categorias.html"
+        ><img
+          class="imgFooter"
+          style="width: 10vw; height: 10vh"
+          src="images/home.svg"
+          alt="Home"
+      /></a>
+    </div>
+    <div>
+      <a href="estadisticas.html"
+        ><img
+          class="imgFooter"
+          style="width: 10vw; height: 10vh"
+          src="images/estadisticas.svg"
+          alt="Estadisticas"
+      /></a>
+    </div>
+    <div>
+      <a href="profile.html"
+        ><img
+          class="imgFooter"
+          style="width: 10vw; height: 10vh"
+          src="images/user.svg"
+          alt="Mi Perfil"
+      /></a>
+    </div>
+  </footer>
+  <script src="Script/estadisticas.js"></script>
+</html>
