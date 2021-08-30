@@ -1,4 +1,5 @@
 //Code here!!
+
 let usuario = document.querySelector("#confirmarDatosUsuario");
 
 const getData = async (url) => {
@@ -39,3 +40,4 @@ usuario.addEventListener("click",  async() =>{
         location.href = "categorias.html";  
     }
 );
+export default dataUsuario;
